@@ -23,7 +23,6 @@ admin.site.site_title = "Admin Portal ";
 admin.site.index_title = "Welcome to Administrator Portal ";
 
 #add these models to the admin page
-admin.site.register(Profile)
 admin.site.register(CustomUser, CustomUserAdmin)
 
 #hide these models on the admin page
