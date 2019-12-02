@@ -12,9 +12,9 @@ class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
     model = CustomUser
-    list_display = ['email', 'username', 'role']
+    list_display = ['email', 'username', 'role', 'is_active']
     fieldsets = (
-        (('User'), {'fields': ('username', 'email','password', 'role')}),
+        (('User'), {'fields': ('username', 'email', 'password', 'role', 'is_active')}),
     )
 
 #Customize the admin site header and title
